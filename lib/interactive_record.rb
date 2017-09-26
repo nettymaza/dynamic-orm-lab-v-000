@@ -1,7 +1,7 @@
 require_relative "../config/environment.rb"
 require 'active_support/inflector'
 require 'pry'
-require 'awesome_print'
+
 
 class InteractiveRecord
 
