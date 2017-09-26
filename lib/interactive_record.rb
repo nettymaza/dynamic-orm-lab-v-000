@@ -59,9 +59,9 @@ class InteractiveRecord
     value_for_insert = attribute_value.class == Fixnum ? attribute_value : "'#{attribute_value}'"
     sql = "SELECT * FROM #{self.table_name} WHERE #{attribute.keys.first} = #{value_for_insert}"
     DB[:conn].execute(sql)
+    binding.pry
 
   end
-
 
 
   # def self.find_by(attribute_hash)
